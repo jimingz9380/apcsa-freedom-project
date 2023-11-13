@@ -1,7 +1,13 @@
-# Entry 1
-##### X/X/XX
+# Entry 1: Research
+## 12/11/23
 
-Text
+### Context
+
+###  Question
+
+### Tinker
+
+### Takeaway
 
 [Next](entry02.md)
 
