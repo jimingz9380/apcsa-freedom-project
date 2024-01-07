@@ -23,7 +23,7 @@ For my project, I chose to independently study **X** in order to help me make **
 Below you will find my blog about how I made my project.
 
 * [Research & Tinker](blog/entry01.md)
-* [Entry 2](blog/entry02.md)
+* [Modeling](blog/entry02.md)
 * [Entry 3](blog/entry03.md)
 * [Entry 4](blog/entry04.md)
 * [Entry 5](blog/entry05.md)
