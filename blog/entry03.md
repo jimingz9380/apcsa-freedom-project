@@ -1,4 +1,4 @@
-# SCipting
+# Scripting
 ##### 2/11/24
 
 ### Context
@@ -17,12 +17,28 @@ In order to script my running animation watching the two videos I also watched o
 ```js
 local userInput = game:GetService("UserInputService")
 local player = game:GetService("Players")
+//running script start
+userInput.InputBegan:Connect(function(inputobject, gameProcessed)
+	if not gameProccessed then
+		if inputobject.KeyCode == Enum.KeyCode.LeftShift then
+			player.WalkSpeed = 30
+		end
+	end
+end)
 
+
+userInput.InputEnded:Connect(function(inputobject, gameProcessed)
+	if not gameProccessed then
+		if inputobject.KeyCode == Enum.KeyCode.LeftShift then
+			player.WalkSpeed = 16
+		end
+	end
+end)
 ```
 
 
 ### running Script - Solution
-For my solution, I continued research on the Roblox reference page and learned some keycodes. After switching up my keycode(keyboard button) I had another error with nil index character in my output. Then went back on YouTube again to find more different alternative solutions in relation to character value because the character couldn't receive the value at all because it was nil meaning nothing was there. I watch this video. In this video, I learn this code local Character = Player. Character or Player.CharacterAdded.Wait() to add the script into the player after they join the game and believe this is why before it wasn't working.
+For my solution, I continued research on the Roblox reference page and learned some important [keycodes](https://create.roblox.com/docs/reference/engine/enums/KeyCode). After switching up my keycode(keyboard button) I had another error with a nil index character in my output. Then went back on YouTube again to find more different alternative solutions concerning character value because the character couldn't receive the value at all because it was nil meaning nothing was there. I watch this video. In this [video](https://www.youtube.com/watch?v=Few1OloJkO8), I learn this code local Character = Player. Character or Player.CharacterAdded.Wait() to add the script into the player after they join the game and believe this is why before it wasn't working.
 #### final script
 ```js
 //get all the information within my game folder and connect it
@@ -32,14 +48,14 @@ local Character = Player.Character or Player.CharacterAdded.Wait()
 local Humanoid = Character:WaitForChild("Humanoid")
 
 //running script start
-userInput.InputBegan:Connect(function(inputobject, gameProcessed)
+userInput.InputBegan:Connect(function(inputobject)
 	if inputobject.KeyCode == Enum.KeyCode.LeftShift then
 		Humanoid.WalkSpeed = 30
 	end
 end)
 
 
-userInput.InputEnded:Connect(function(inputobject, gameProcessed)
+userInput.InputEnded:Connect(function(inputobject)
 	if inputobject.KeyCode == Enum.KeyCode.LeftShift then
 		Humanoid.WalkSpeed = 16
 	end
