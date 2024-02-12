@@ -47,7 +47,7 @@ end)
 ```
 
 ### Takeaway
-
+In this blog, It developed my skill of Consideration, How to learn, Creativity and degugging. I believe I have a big project this year and to be honest I'm not completely sure if I will be able to make it very great because their is a lot of process to make a great game. Through this blog I need to know what is top piority on what should I be focus learning of what should be creating and all the requirement that is need to be created such as the codes, model and map later in the future! Now and the past I knbw code is the number one top piority because without nothing work even if it look good(Sep10).
 
 [Previous](entry02.md) | [Next](entry04.md)
 
