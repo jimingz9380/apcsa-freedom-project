@@ -44,3 +44,14 @@ Today I followed my MVP plan - which is making modeling, I model a tree, and roc
 
 ![Screenshot (23)](https://github.com/jimingz9380/apcsa-freedom-project/assets/91745086/f7f0d95d-0a00-413f-819c-fa9209bf8fb5)
 
+
+
+### 4/14/24
+This week I tried to make more interaction between a user and the game. Over the weeks, I realize finished my game was impossible, I even talked to Tamin who was working on something similar to me. His was some sort of a fighting game, while mine is like an open-world exploration RPG that including fighting, mining, etc. Since it was way too much I decided on a detour, I wanted to let the game have a purpose, so I decided to make a treasure hunt game where the user goes out and just finds the chest.
+<br> 
+This my currently place holder for my chest.
+![Screenshot (28)](https://github.com/jimingz9380/apcsa-freedom-project/assets/91745086/48c4a924-33a3-4a30-bd40-8e7d62394ca7)
+<br>
+### codes 
+This is my code for the chest and yea I agree it is not much because there are other attachment code that should be made given it to and an exmaple would be when the user press e it will connect to the chat and state "this user have found a chest blah blah". I had many trial and error trying to figure out how to solve it, but still couldn't, so I'm trying a different approach and it is, instead of it saying in the chat it will make a pop ui and it will only be seen by the user stating "congradation you found chest 1".
+![Screenshot (29)](https://github.com/jimingz9380/apcsa-freedom-project/assets/91745086/a04c35b0-11f4-4064-9814-8a33dfc5f4cf)
