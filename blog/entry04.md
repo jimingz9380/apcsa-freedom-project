@@ -5,11 +5,11 @@
 After develop some code for my running and crouching. I continue to work on the code I shoudl be doing which is a combat system. This code change my idea of how my game would turn out because it involve multiple folder and file. Though the challenge was completed, it isn't a perfect combat system and it lack combat flow. When testing it player would have to stand still in order to hit each other. This left me struggle for a long time, but still continue with a few change in mind by chanigng he purpoose of the game. 
 
 ### Challenge - Combat
-In the combat challenge I went on youtube and look what code would be helpful to develop comnbat because there are many type of code that exist within roblox documentation. For exampl through the video there a small part of the code that require `FindFirstChild` which I had no clue what it use for and why it is needed for the combat code. This allow me to research the [code](https://create.roblox.com/docs/reference/engine/classes/Instance#FindFirstChild). Which I found that FindFirstChild is an instance that find the child your looking for depeding on which parent you selected. Another problem I encouter was the after watching the video and the video require for it, I need to understand why they add script into different folder/files. To understand I went to roblox document and another part of youtube to understand by default the roblox creator script will automatically transfer to the player when they join the game depending on which file the game developer put the script in.
+In the combat challenge I went on youtube and look what code would be helpful to develop [comnbat](https://www.youtube.com/watch?v=t-LTrFvlwiY) because there are many type of code that exist within roblox documentation. For example through the video there a small part of the code that require `FindFirstChild` which I had no clue what it use for and why it is needed for the combat code. This allow me to research the [code](https://create.roblox.com/docs/reference/engine/classes/Instance#FindFirstChild). Which I found that FindFirstChild is an instance that find the child your looking for depeding on which parent you selected. Another problem I encouter was the after watching the video and the video require for it, I need to understand why they add script into different folder/files. To understand I went to roblox document and another part of youtube to understand by default the roblox creator script will automatically transfer to the player when they join the game depending on which file the game developer put the script in.
 
 
 
-### file 1
+### File 1
 I put this script into `StarterCharacterScripts` throught her parent of `StarterPlayer`. This folder allow player who join by default haivng the abiliyt ot punch left and right through when they click.
 
 ```
@@ -52,7 +52,7 @@ UIS.InputBegan:Connect(function(input, gpe)
 end)
 ```
 
-### file 2
+### File 2
 This script I put in a folder call `ServerScriptService`, I don't really know how to explain this folder, but in default when the server is created the entire server would have the script running the entire time. Thus meaning when the player click through their mouse, it would transfer and input onto the server script and run this code. It will allow any player who did the interaction.
 ```js
 game.ReplicatedStorage.CombatHit.OnServerEvent:Connect(function(player)
@@ -91,9 +91,16 @@ end)
 ```
 
 ### Modeling - Chest
-With the completion of combat
+Within the completion of the combat system which was very confusing for my to created I mention that I would change the purpose of the game currently. Depsite change the purpose, my end goal would be still finishing the open world rpg game, but atleast having something done by the MVP. The decision was an open rpg world would have chest exploration, so I made model for my chest
 
+#### Inspiration
+![Screenshot (33)](https://github.com/jimingz9380/apcsa-freedom-project/assets/91745086/3fd08ddd-7de8-4347-a02a-dbb1eebac079)
 
+#### My model(Chest)
+
+![Screenshot (32)](https://github.com/jimingz9380/apcsa-freedom-project/assets/91745086/9980d702-7fef-41a5-80c7-76f68b18f39e)
+
+### Takeaway
 
 
 [Previous](entry03.md) | [Next](entry05.md)
