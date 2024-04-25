@@ -2,17 +2,17 @@
 ##### 4/25/24
 
 ### Context
-After develop some code for my running and crouching. I continue to work on the code I shoudl be doing which is a combat system. This code change my idea of how my game would turn out because it involve multiple folder and file. Though the challenge was completed, it isn't a perfect combat system and it lack combat flow. When testing it player would have to stand still in order to hit each other. This left me struggle for a long time, but still continue with a few change in mind by chanigng he purpoose of the game. 
+After developing some code for my running and crouching. I continue to work on the code I should be doing which is a combat system. This code changed my idea of how my game would turn out because it involved multiple folders and files. Though the challenge was completed, it isn't a perfect combat system and it lacks combat flow. When testing it players would have to stand still to hit each other. This left me struggling for a long time but continued with a few changes in mind by changing the purpose of the game.
 
 ### Challenge - Combat
-In the combat challenge I went on youtube and look what code would be helpful to develop [comnbat](https://www.youtube.com/watch?v=t-LTrFvlwiY) because there are many type of code that exist within roblox documentation. For example through the video there a small part of the code that require `FindFirstChild` which I had no clue what it use for and why it is needed for the combat code. This allow me to research the [code](https://create.roblox.com/docs/reference/engine/classes/Instance#FindFirstChild). Which I found that FindFirstChild is an instance that find the child your looking for depeding on which parent you selected. Another problem I encouter was the after watching the video and the video require for it, I need to understand why they add script into different folder/files. To understand I went to roblox document and another part of youtube to understand by default the roblox creator script will automatically transfer to the player when they join the game depending on which file the game developer put the script in.
+In the combat challenge I went on YouTube and look what code would be helpful to develop [comnbat](https://www.youtube.com/watch?v=t-LTrFvlwiY) because many types of code exist within Roblox documentation. For example, through the video, there is a small part of the code that requires `FindFirstChild` which I had no clue what it is used for and why it is needed for the combat code. This allows me to research the [code](https://create.roblox.com/docs/reference/engine/classes/Instance#FindFirstChild). I found that FindFirstChild is an instance that finds the property within a certain part which depends on which parent you selected. Another problem I encountered was that after watching the video and the video required for it, I needed to understand why they added the script into different folders/files. To understand I went to the Roblox document and another part of YouTube to understand by default the Roblox creator script will automatically transfer to the player when they join the game depending on which file the game developer put the script in.
 
 
 
 ### File 1
 I put this script into `StarterCharacterScripts` throught her parent of `StarterPlayer`. This folder allow player who join by default haivng the abiliyt ot punch left and right through when they click.
 
-```
+```js
 local player = game.Players.LocalPlayer
 local UIS = game:GetService("UserInputService")
 
@@ -53,7 +53,7 @@ end)
 ```
 
 ### File 2
-This script I put in a folder call `ServerScriptService`, I don't really know how to explain this folder, but in default when the server is created the entire server would have the script running the entire time. Thus meaning when the player click through their mouse, it would transfer and input onto the server script and run this code. It will allow any player who did the interaction.
+I put this script in a folder called `ServerScriptService` because the server would monitor the player actions between each other. Currently, I don't know how to explain this folder, but in default when the server is created the entire server would have the script running the entire time. This means when the player clicks through their mouse, it would transfer and input onto the server script and run this code. It will allow any player who did the interaction between two players to find the player who got hit. Then go to the parent find the humanoid property and make the player lose HP(hitpoint).
 ```js
 game.ReplicatedStorage.CombatHit.OnServerEvent:Connect(function(player)
 	// attribute on the hitbox that being created
@@ -91,7 +91,7 @@ end)
 ```
 
 ### Modeling - Chest
-Within the completion of the combat system which was very confusing for my to created I mention that I would change the purpose of the game currently. Depsite change the purpose, my end goal would be still finishing the open world rpg game, but atleast having something done by the MVP. The decision was an open rpg world would have chest exploration, so I made model for my chest
+Upon the completion of the combat system which was very confusing for me to create, I mentioned that I would change the purpose of the game currently. Despite changing the purpose, my end goal would be still finishing the open-world rpg game, but at least having something done by the MVP. The decision was an open RPG world would have chest exploration, so I made a model for my chest.
 
 #### Inspiration
 ![Screenshot (33)](https://github.com/jimingz9380/apcsa-freedom-project/assets/91745086/3fd08ddd-7de8-4347-a02a-dbb1eebac079)
@@ -101,7 +101,7 @@ Within the completion of the combat system which was very confusing for my to cr
 ![Screenshot (32)](https://github.com/jimingz9380/apcsa-freedom-project/assets/91745086/9980d702-7fef-41a5-80c7-76f68b18f39e)
 
 ### Takeaway
-
+Currently, I'm in the EDP of <ins> create a prototype, Test and evaluate the prototype, and Improve</ins>. There are a lot of develop I currently have and don't have enough decide on spending a lot of time even though I spend a decent amount of time. Mostly due to my lack of ability to understand the attributes of coding and possible ways to create the combat system which possibly functions, but doesn't work well leading me to waste even more time. On the other hand, the time spending has helped me develop the skills of **growth mindset and embarrassing failure **. There were some obstacles, but had overcome them in my combat development experience.
 
 [Previous](entry03.md) | [Next](entry05.md)
 
