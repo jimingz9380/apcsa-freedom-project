@@ -59,9 +59,82 @@ When the player goes to the chest and clicks on it for 1 second, it will state "
 While creating my punching and running code I also created a very simple map for the player to explore around to find the chest here is what the map looks like!
 ![Screenshot (36)](https://github.com/jimingz9380/apcsa-freedom-project/assets/91745086/e3be0490-fffc-43c7-9cd2-d83299efc80b)
 
+### Device friendly 
+My last goal before the finisheing the MVP is during my expo. I wanted my user to be able to play the game on mobile due to without device accesibility. They would need a computer to use in order to test out my game. The task was very hard I hard to use [roblox documention](https://create.roblox.com/docs/input/mobile) again. I made a code for it, but the conflict was I couldn't make it stop when the player click it again, so I look at [youtube](https://www.bing.com/videos/riverview/relatedvideo?&q=roblox+mobile+sprinting+&&mid=B06D85914961A36EFF27B06D85914961A36EFF27&&FORM=VRDGAR) if there were another way, which there is a player had made a sprint button into a GUI and then add the script to it. 
+
+
+```js
+//it allow player to script, but doesn't stop sprinting
+local Players = game:GetService("Players")
+local localPlayer = Players.LocalPlayer
+
+local character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+local function handleAction(actionName, inputState, input)
+	
+	
+	if inputState == Enum.UserInputState.Begin then
+		print("true")
+		humanoid.WalkSpeed = 32
+	else 
+		print("false")
+		humanoid.WalkSpeed = 16
+	end
+	
+end
+
+
+local function onRunning(speed: number)
+	if speed >= 16 and Rstate then 
+		humanoid.WalkSpeed = 32
+		print("32")
+	else if speed == 32 and not Rstate then 
+		print("16")	
+		humanoid.WalkSpeed = 16
+		end
+	end
+-end
+
+humanoid.Running:Connect(function(speed: number)
+	onRunning(speed)
+end)
+
+ContextActionService:BindAction("RunBind", handleAction, true, Enum.KeyCode.LeftControl)
+ContextActionService:SetPosition("RunBind", UDim2.new(0.2, 0, 0.5, 0))
+ContextActionService:SetTitle("RunBind", "Sprint")
+
+```
+```js
+//solution after I convert it into a GUI button for sprinting
+local userinput = game:GetService("UserInputService")
+local btn = script.Parent
+local Players = game:GetService("Players")
+local localPlayer = Players.LocalPlayer
+
+local character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+btn.Activated:Connect(function()	
+	if not humanoid then
+		return 
+	end
+	
+	if humanoid.WalkSpeed == 16 then 
+		humanoid.WalkSpeed = 32 
+	else
+		humanoid.WalkSpeed = 16
+	end	
+end)
+
+if userinput.KeyboardEnabled then
+	btn.Visible = false
+else
+	btn.Visible = true
+end
+```
 ### Takeaway 
-
-
+This blog have help develop my skill 
 
 
 [Previous](entry04.md) | [Next](entry06.md)
