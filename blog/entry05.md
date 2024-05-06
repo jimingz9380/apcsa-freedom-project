@@ -1,7 +1,18 @@
 # Entry 5
-##### X/X/XX
+##### 5/5/24
 
-Text
+### Context 
+
+### GUI
+
+### Chest Searching 
+
+#### MAP
+
+### Takeaway 
+
+
+
 
 [Previous](entry04.md) | [Next](entry06.md)
 
