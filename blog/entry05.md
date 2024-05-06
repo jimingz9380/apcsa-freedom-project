@@ -60,8 +60,8 @@ While creating my punching and running code I also created a very simple map for
 ![Screenshot (36)](https://github.com/jimingz9380/apcsa-freedom-project/assets/91745086/e3be0490-fffc-43c7-9cd2-d83299efc80b)
 
 ### Device friendly 
-My last goal before the finisheing the MVP is during my expo. I wanted my user to be able to play the game on mobile due to without device accesibility. They would need a computer to use in order to test out my game. The task was very hard I hard to use [roblox documention](https://create.roblox.com/docs/input/mobile) again. I made a code for it, but the conflict was I couldn't make it stop when the player click it again, so I look at [youtube](https://www.bing.com/videos/riverview/relatedvideo?&q=roblox+mobile+sprinting+&&mid=B06D85914961A36EFF27B06D85914961A36EFF27&&FORM=VRDGAR) if there were another way, which there is a player had made a sprint button into a GUI and then add the script to it. 
 
+My last goal before finishing the MVP is during my expo. I wanted my user to be able to play the game on mobile without device accessibility. They would need a computer to use to test out my game. The task was very hard I hard to use [roblox documention](https://create.roblox.com/docs/input/mobile) again. I made a code for it, but the conflict was I couldn't make it stop when the player clicked it again, so I looked at [youtube](https://www.bing.com/videos/riverview/relatedvideo?&q=roblox+mobile+sprinting+&&mid=B06D85914961A36EFF27B06D85914961A36EFF27&&FORM=VRDGAR) if there was another way, which there is a player had made a sprint button into a GUI and then add the script to it. 
 
 ```js
 //it allow player to script, but doesn't stop sprinting
@@ -134,7 +134,7 @@ else
 end
 ```
 ### Takeaway 
-This blog have help develop my skill 
+This blog has helped me develop my skills in embarrassing failure and how to learn because, in the end, I feel like my projects aren't great compared to others. This is why I learned that the main goal is to learn what I created because despite the tools I used they might be easier or harder than mine to create a project. Sometimes I also need to see some failure before I can improve on my work such as my mobile-friendly code. All that matters right now is MVP(Minimal Viable Product) which I did complete and should be happy about.
 
 
 [Previous](entry04.md) | [Next](entry06.md)
