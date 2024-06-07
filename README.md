@@ -27,7 +27,7 @@ Below you will find my blog about how I made my project.
 * [Roblox Scipt](blog/entry03.md)
 * [Combat & Modeling](blog/entry04.md)
 * [Completing MVP](blog/entry05.md)
-* [Entry 6](blog/entry06.md)
+* [FreedomProject & Presentation](blog/entry06.md)
 * [Entry 7](blog/entry07.md)
 * [Entry 8](blog/entry08.md)
 * [Entry 9](blog/entry09.md)
